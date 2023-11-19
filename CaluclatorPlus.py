@@ -16,6 +16,10 @@ class Calculator:
 
 	def divide(self, a, b):
 
+		if b == 0:
+
+			raise ValueError("Cannot divide by zero.")
+
 		return a / b
 
 
@@ -23,9 +27,11 @@ if __name__ == "__main__":
 
 	calculator = Calculator()
 
-		num1 = 16
+	num1 = 16
 
-		num2 = 4
+	num2 = 4
+
+
 
 print(f"{num1} + {num2} = {calculator.add(num1, num2)}")
 
