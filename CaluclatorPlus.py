@@ -16,6 +16,10 @@ class Calculator:
 
 	def divide(self, a, b):
 
+		if b == 0:
+
+			raise ValueError("Cannot divide by zero.")
+
 		return a / b
 	
 	def square_root(self, x):
@@ -30,8 +34,8 @@ if __name__ == "__main__":
 	num1 = 16
 
 	num2 = 4
-
-	num =25
+  
+	num3 = 25
 
 print(f"{num1} + {num2} = {calculator.add(num1, num2)}")
 
